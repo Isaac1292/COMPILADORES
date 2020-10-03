@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Compiladores</title>
+  <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="logica.js" language="javascript" type="text/javascript"></script>
+</head>
+
+<body>
+    <form>
+        <h1>Inserte su alfabeto:</h1>
+        <input id='alfabeto_1'>
+        <input id='alfabeto_2'>
+        <button type="button" onclick="click_operaciones_alfabeto()" class="btn btn-primary" id="validate">Validar</button>
+    </form>
+    <br>
+    <form>
+        <div class='texto'>
+            <br>
+            <h3>Union:</h3>
+            <input id='union_alfabeto'>   
+        </div>
+        <div class='texto'>
+            <br>
+            <h3>Interseccion:</h3>
+            <input id='interseccion_alfabeto'>   
+        </div>
+        <div class='texto'>
+            <br>
+            <h3>Diferencia:</h3>
+            <input id='diferencia_alfabeto'>   
+        </div>
+        
+    </form>
+    <br>
+    <br>
+    <br>
+    <form>
+        <h1>Inserte su lenguaje:</h1>
+        <input id='lenguaje_1'>
+        <input id='lenguaje_2'>
+        <button type="button" onclick="click_operaciones_lenguaje()" class="btn btn-primary" id="validate">Validar</button>
+    </form>
+    <br>
+    <form>
+        <div class='texto'>
+            <br>
+            <h3>Union:</h3>
+            <input id='union_lenguaje'>   
+        </div>
+        <div class='texto'>
+            <br>
+            <h3>Interseccion:</h3>
+            <input id='interseccion_lenguaje'>   
+        </div>
+        <div class='texto'>
+            <br>
+            <h3>Diferencia:</h3>
+            <input id='diferencia_lenguaje'>   
+        </div>
+        <div class='texto'>
+            <br>
+            <h3>Concatenacion:</h3>
+            <input id='concatenacion_lenguaje'>   
+        </div>
+        <br>
+        <h6>Lenguaje Potencia</h6>
+        <input id='lenguaje_potencia'>
+        <br>
+        <h6>Exponente</h6>
+        <input id='exponente'>
+        <button type="button" onclick="hallar_potencia_lenguaje()" class="btn btn-primary" id="validate">Validar</button>
+       
+        <div class='texto'>
+            <br>
+            <h3>Potencia:</h3>
+            <input id='potencia_lenguaje'>   
+        </div>
+        <br>
+        <h6>ingrese el lenguaje para la inversa</h6>
+        <input id='lenguaje_inversa'>
+        <button type="button" onclick="hallar_inversa_lenguaje()" class="btn btn-primary" id="validate">Validar</button>
+       
+        <br>
+        <div class='texto'>
+            <br>
+            <h3>Inversa:</h3>
+            <input id='inversa_lenguaje'>   
+        </div>
+        <br>
+        <h6>ingrese el lenguaje para la cardinalidad</h6>
+        <input id='lenguaje_cardinal'>
+        <button type="button" onclick="hallar_cardinal_lenguaje()" class="btn btn-primary" id="validate">Validar</button>
+       
+        <br>
+        <div class='texto'>
+            <br>
+            <h3>Cardinalidad:</h3>
+            <input id='cardinalidad_lenguaje'>   
+        </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    <form>
+        <h1>Inserte su Palabra:</h1>
+        <input id='palabra'>
+        <button type="button" onclick="hallar_cardinal_palabra()" class="btn btn-primary" id="validate">Validar</button>
+    </form>
+    <br>
+    <br>
+    <div class='texto'>
+        <br>
+        <h3>Cardinal Palabra:</h3>
+        
+        <input id='cardinalidad_palabra'> 
+          
+    </div>
+    <br>
+</body>
+</html>
